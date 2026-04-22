@@ -3,6 +3,7 @@
 A minimal MLOps-style batch job that reads OHLCV data, computes a rolling mean on the close price, generates a binary signal (`1` if close > rolling mean, else `0`), and outputs structured metrics with reproducible, deterministic runs.
 
 ## Project Structure
+```
 ├── run.py              # Main pipeline script
 ├── config.yaml         # Configuration (seed, window, version)
 ├── data.csv            # Input OHLCV dataset (10,000 rows)
@@ -12,7 +13,7 @@ A minimal MLOps-style batch job that reads OHLCV data, computes a rolling mean o
 ├── README.md           # This file
 ├── metrics.json        # Sample output from a successful run
 └── run.log             # Sample log from a successful run
-
+```
 ## Requirements
 
 - Python 3.11+
